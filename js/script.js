@@ -1,9 +1,11 @@
+// get input field value
 function getValueOfinputField(inputFieldId){
     const inputField = document.getElementById(inputFieldId)
     const inputFieldText = inputField.value;
     let inputFieldNumber = parseInt(inputFieldText)
     return inputFieldNumber;    
 }
+// calculate input field value and handle some error
 function calculate(){
     const totalIncome = getValueOfinputField('income-field')
     const foodExpense = getValueOfinputField('food-field')
@@ -18,13 +20,14 @@ function calculate(){
     totalExpenseField.innerText = totalExpense;
     const balance = totalIncome - totalExpense;
     balancedField.innerText = balance;
-// error handle total expense do not more than income
+// error handle for total expense is not more than income
     const errorMassageThree = document.getElementById('error-massageThree')
     if(totalExpense>totalIncome) {
         errorMassageThree.style.display = 'block'
         balancedField.innerText = 'Balance-empty';
     }
 }
+// calculate savings part
 function calculateSavingsAndRemaining(){
     const totalIncome = getValueOfinputField('income-field')
     const foodExpense = getValueOfinputField('food-field')
@@ -63,7 +66,7 @@ document.getElementById('calculate-button').addEventListener('click',function(){
     const foodExpense = getValueOfinputField('food-field')
     const rentExpense = getValueOfinputField('rent-field')
     const clothesExpense = getValueOfinputField('clothes-field')
-    // error massage
+    // error massage for input
     const errorMassageOne = document.getElementById('error-massageOne')
     const errorMassageTwo = document.getElementById('error-massageTwo')
     console.log(errorMassageOne)

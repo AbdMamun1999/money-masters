@@ -9,6 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+    <!-- header -->
     <header class="mt-2">
         <h1 class="text-center text-4xl text-[#31A5AC] font-medium">
             Monthly cost and savings
@@ -17,12 +18,14 @@
             <section class="mt-2 w-4/5 mx-auto">
                 <div class="grid lg:grid-cols-2">
                     <div  class="">
+                        <!-- banner -->
                         <div class=" h-full">
                             <img src="images/img-1.jpg" alt="" class="w-full h-full">
                         </div>
                     </div>
                     <div>
                         <div class="bg-[#F8F8F8] p-3 lg:w-4/5 sm:w-full mx-auto xm:mt-5">
+                            <!-- error massage -->
                             <h4 id="error-massageOne" class="text-center text-xl bg-red-600 p-2 w-4/5 mx-auto mb-2 hidden">
                                 It is nagative number.please,give a positive number
                             </h4>
@@ -35,11 +38,14 @@
                             <h4 id="error-massageFour" class="text-center text-xl bg-red-600 p-2 w-4/5 mx-auto mb-2 hidden">
                                 Sorry,Savings amount is not more than Balance
                             </h4>
+                            <!-- calculating part -->
                             <div class="text-center ">
+                                <!-- income -->
                                 <h3 class="text-center text-2xl">Income</h3>
                                 <label for="" class="text-xl">Income : </label>
                                 <input type="text" id="income-field" class="border-2 rounded outline-none px-3 py-2 bg-[#DCDCDC]">
                             </div>
+                            <!-- expense -->
                             <div class="text-center mt-1">
                                 <h3 class="text-center text-2xl">Expenses</h3>
                                 <label for="" class="text-xl">Food : </label>
@@ -67,6 +73,7 @@
                                     <span id="balanced-field"></span>
                                 </h1>
                             </div>
+                            <!-- savings -->
                             <div class="text-center">
                                 <span class="text-xl">Save : </span>
                                 <input type="text" id="percent-field" class="border-2 rounded outline-none px-3 py-2 bg-[#DCDCDC]">
